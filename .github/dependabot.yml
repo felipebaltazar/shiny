@@ -1,0 +1,35 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  target-branch: dev
+  labels:
+  - dependencies
+  ignore:
+  - dependency-name: ReactiveUI
+    versions:
+    - 13.1.1
+    - 13.2.10
+    - 13.2.2
+  - dependency-name: Microsoft.NET.Test.Sdk
+    versions:
+    - 16.8.3
+    - 16.9.1
+  - dependency-name: Splat.Microsoft.Extensions.DependencyInjection
+    versions:
+    - 10.0.1
+  - dependency-name: Moq
+    versions:
+    - 4.16.0
+  - dependency-name: Microsoft.AppCenter.Analytics
+    versions:
+    - 4.1.0
+  - dependency-name: Microsoft.AppCenter.Crashes
+    versions:
+    - 4.1.0
+  - dependency-name: Xamarin.Essentials
+    versions:
+    - 1.6.0
